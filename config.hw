@@ -6,6 +6,10 @@
 # define _CRT_RAND_S
 #endif
 
+/* From Build.gn */
+#define OPENSSL 1
+#define HAVE_CONFIG_H 1
+
 /* Define if building for a CISC machine (e.g. Intel). */
 #define CPU_CISC 1
 
@@ -41,6 +45,7 @@
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 /* #undef HAVE_INTTYPES_H */
+#define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `socket' library (-lsocket). */
 /* #undef HAVE_LIBSOCKET */
@@ -59,6 +64,7 @@
 
 /* Define to 1 if you have the <stdint.h> header file. */
 /* #undef HAVE_STDINT_H */
+#define HAVE_STDINT_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1

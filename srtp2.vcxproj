@@ -147,7 +147,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>OPENSSL;WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -170,13 +170,14 @@
     </CustomBuildStep>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);C:\myssl\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <DisableSpecificWarnings>4018</DisableSpecificWarnings>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
@@ -234,7 +235,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);C:\myssl\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -267,13 +268,14 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);C:\myssl\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <DisableSpecificWarnings>4018</DisableSpecificWarnings>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
@@ -344,13 +346,13 @@
       <FunctionLevelLinking Condition="'$(Configuration)|$(Platform)'=='Debug Dll|Win32'">false</FunctionLevelLinking>
       <FunctionLevelLinking Condition="'$(Configuration)|$(Platform)'=='Debug Dll|x64'">false</FunctionLevelLinking>
     </ClCompile>
-    <ClCompile Include="crypto\cipher\aes_icm.c" />
+    <ClCompile Include="crypto\cipher\aes_icm_ossl.c" />
+    <ClCompile Include="crypto\cipher\aes_gcm_ossl.c" />
     <ClCompile Include="crypto\cipher\cipher.c" />
     <ClCompile Include="crypto\cipher\null_cipher.c" />
     <ClCompile Include="crypto\hash\auth.c" />
-    <ClCompile Include="crypto\hash\hmac.c" />
+    <ClCompile Include="crypto\hash\hmac_ossl.c" />
     <ClCompile Include="crypto\hash\null_auth.c" />
-    <ClCompile Include="crypto\hash\sha1.c" />
     <ClCompile Include="crypto\kernel\alloc.c" />
     <ClCompile Include="crypto\kernel\crypto_kernel.c" />
     <ClCompile Include="crypto\kernel\err.c" />
@@ -387,7 +389,7 @@
     <ClInclude Include="crypto\include\rand_source.h" />
     <ClInclude Include="crypto\include\rdb.h" />
     <ClInclude Include="crypto\include\rdbx.h" />
-    <ClInclude Include="crypto\include\sha1.h" />
+    <ClInclude Include="crypto\include\stat.h" />
     <ClInclude Include="crypto\include\stat.h" />
     <ClInclude Include="include\ekt.h" />
     <ClInclude Include="include\srtp.h" />
