@@ -170,7 +170,7 @@
     </CustomBuildStep>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);C:\myssl\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -235,7 +235,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);C:\myssl\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -268,7 +268,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);C:\myssl\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
