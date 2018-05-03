@@ -1,1 +1,1 @@
-configure_file( srtp2.vcproj.cmake.in srtp2.vcproj @ONLY)
+configure_file( srtp2.vcxproj.cmake.in srtp2.vcxproj @ONLY)
