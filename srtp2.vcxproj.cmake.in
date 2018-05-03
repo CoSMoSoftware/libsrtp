@@ -390,7 +390,6 @@
     <ClInclude Include="crypto\include\rdb.h" />
     <ClInclude Include="crypto\include\rdbx.h" />
     <ClInclude Include="crypto\include\stat.h" />
-    <ClInclude Include="crypto\include\stat.h" />
     <ClInclude Include="include\ekt.h" />
     <ClInclude Include="include\srtp.h" />
     <ClInclude Include="include\srtp_priv.h" />
