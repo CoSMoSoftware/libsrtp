@@ -146,7 +146,7 @@
     </CustomBuildStep>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>OPENSSL;WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -192,7 +192,7 @@
       <Command />
     </CustomBuildStep>
     <ClCompile>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
@@ -213,7 +213,7 @@
       </Command>
     </CustomBuildStep>
     <ClCompile>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
@@ -298,7 +298,7 @@
       <Command />
     </CustomBuildStep>
     <ClCompile>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
@@ -323,7 +323,7 @@
       </Command>
     </CustomBuildStep>
     <ClCompile>
-      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>crypto/include;include;%(AdditionalIncludeDirectories);@WEBRTC_SSL_ROOT@\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
